@@ -11,6 +11,12 @@ namespace PropExample
         public string name;
         public int price;
         static Product product;
+
+        static Product()
+        {
+            product = null;
+            Console.WriteLine("정적 생성자 호출");
+        }
         
         private Product(string name, int price)
         {
