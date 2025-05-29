@@ -17,6 +17,11 @@ namespace PropExample
             product = null;
             Console.WriteLine("정적 생성자 호출");
         }
+
+        ~Product()
+        {
+            Console.WriteLine("Product 객체 소멸자 생성!");
+        }
         
         private Product(string name, int price)
         {
