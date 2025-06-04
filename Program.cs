@@ -71,6 +71,11 @@ namespace PropExample
             testB.value = 20;
             Console.WriteLine(testA.value);
 
+            //피보나치 재귀함수
+            Fibonacci fibo = new Fibonacci();
+            Console.WriteLine(fibo.Get(1));
+            Console.WriteLine(fibo.Get(100));
+
         }
 
         class Test
