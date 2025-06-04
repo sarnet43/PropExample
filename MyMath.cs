@@ -9,5 +9,6 @@ namespace PropExample
     class MyMath
     {
         public const double PI = 3.141592;
+
     }
 }
