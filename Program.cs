@@ -63,7 +63,14 @@ namespace PropExample
             test.value = 5;
             Change(test);  //레퍼런스 넘김에 주의
             Console.WriteLine(test.value);
-            
+
+            // 참조 복사 예제 하나 더
+            Test testA = new Test();
+            Test testB = testA;
+            testA.value = 10;
+            testB.value = 20;
+            Console.WriteLine(testA.value);
+
         }
 
         class Test
